@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spongebob</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        
+        #textCss {
+            display: none;
+        }
+        
+        #textContent {
+            width: 280px;
+            height: 560px;
+            border-radius: 16px;
+            padding: 10px;
+            overflow-y: auto;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            background-color: rgba(255, 255, 255, 0.5);
+            position: fixed;
+            top: 50px;
+            left: 20px;
+        }
+        
+         ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+        
+         ::-webkit-scrollbar-track {
+            width: 6px;
+            background: rgba(#101F1C, 0.1);
+            -webkit-border-radius: 2em;
+            -moz-border-radius: 2em;
+            border-radius: 2em;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background-color: rgba(144, 147, 153, .5);
+            background-clip: padding-box;
+            min-height: 28px;
+            -webkit-border-radius: 2em;
+            -moz-border-radius: 2em;
+            border-radius: 2em;
+            transition: background-color .3s;
+            cursor: pointer;
+        }
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(144, 147, 153, .3);
+        }
+        
+        .btn {
+            position: fixed;
+            width: 50px;
+            height: 200px;
+            top: 15px;
+            right: 10px;
+        }
+        
+        button {
+            min-width: 45px;
+            padding: 4px 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            background-color: rgba(255, 255, 255, 0.6);
+            border: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="textContent"></div>
+    <style id="textCss"></style>
+    <div class="spongebob">
+        <div class="left-eye eye">
+            <div class="close">
+            </div>
+            <div class="eyelash">
+                <div class="every-eyelash eyelash-1"></div>
+                <div class="every-eyelash eyelash-2"></div>
+                <div class="every-eyelash eyelash-3"></div>
+            </div>
+            <div class="eyeball eyeball-left">
+                <div class="pupil"></div>
+            </div>
+        </div>
+        <div class="right-eye eye">
+            <div class="close"></div>
+            <div class="eyelash">
+                <div class="every-eyelash eyelash-1"></div>
+                <div class="every-eyelash eyelash-2"></div>
+                <div class="every-eyelash eyelash-3"></div>
+            </div>
+            <div class="eyeball eyeball-right">
+                <div class="pupil"></div>
+            </div>
+        </div>
+        <div class="nose"></div>
+        <div class="face face-left">
+            <div class="freckles freckles-1"></div>
+            <div class="freckles freckles-2"></div>
+            <div class="freckles freckles-3"></div>
+        </div>
+        <div class="face face-right">
+            <div class="freckles freckles-1"></div>
+            <div class="freckles freckles-2"></div>
+            <div class="freckles freckles-3"></div>
+        </div>
+        <div class="mouth mouth-left"></div>
+        <div class="mouth-mid"></div>
+        <div class="mouth mouth-right"></div>
+        <div class="tooth-left"></div>
+        <div class="tooth-right"></div>
+        <div class="lip-left"></div>
+        <div class="lip-right"></div>
+
+    </div>
+    <div class="bubble bubble1"></div>
+    <div class="bubble bubble2"></div>
+    <div class="bubble bubble3"></div>
+    <div class="bubble bubble4"></div>
+    <div class="bubble bubble5"></div>
+    <div class="bubble bubble6"></div>
+    <div class="bubble bubble7"></div>
+    <div class="btn">
+        <button id="btnPause">stop</button>
+        <button id="btnPlay">run</button>
+        <button id="btnSlow">slow</button>
+        <button id="btnEnd">end</button>
+    </div>
+
+    <script src="./main.js"></script>
+    <script src="./control.js" type="module"></script>
+</body>
+
+</html>
